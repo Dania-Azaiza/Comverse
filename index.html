@@ -9,7 +9,7 @@
 	<header>
 		<nav>
 			<a href="index.html"><div class="logo left"><img src="css/img/comverse-logo.png" alt="Comverse logo"></div></a>
-			<ul class="sub-menu">
+			<ul class="list-style sub-menu">
 				<li class="sub-menu-item"><a href="index.html">Your Needs</a></li>
 				<li class="sub-menu-item"><a href="index.html">Our Portfolio</a></li>
 				<li class="sub-menu-item"><a href="index.html">News &amp; Media</a></li>
@@ -17,9 +17,9 @@
 			</ul>
 
 			<div>
-				<ul>
-					<li><a href="index.html">Customer login</a></li>
-					<li>
+				<ul class="list-style a-line-on-hover mini-menu">
+					<li class="mini-menu-item no-background"><a href="index.html">Customer login</a></li>
+					<li class="mini-menu-item">
 						<select>
 							<option value="English">EN</option>
 							<option value="עברית">עברית</option>
@@ -29,14 +29,15 @@
 				</ul>
 			</div>
 
-			<form method="GET" action="">
-					<input type="search" name="search">
-					<input type="submit" name="submit" value="">
+
+			<form method="GET" action="" id="search-box">
+					<input type="search" name="search" class="button-radious">
+					<input type="submit" name="submit" value="" id="search-img">
 			</form>
 		</nav>
 	</header>
 	<!--slides-->
-		<section>
+		<section class="font-color-white slides list-style">
 		<div>
 			<div>
 				<div>
@@ -44,42 +45,34 @@
 					Comverse Policy Studio
 					<p><span>1st</span> Ever Marketing-Oriented Policy Tool</p>
 				</div>
-				<a href=""><button>LEARN MORE</button></a>
-				<div>
-					<ul>
-						<li><a href="#complexity"></a></li>
-						<li><a href="#comverse"></a></li>
-						<li><a href="#market"></a></li>
-						<li><a href="#new-section"></a></li>
-					</ul>
-				</div>
+				<a href=""><button class="blue-button">LEARN MORE</button></a>
 
-				<div class="numbered-bullets">
-					<ul>
-						<li><a href="#complexity"><div>1</div></a></li>
-						<li><a href="#comverse"><div>2</div></a></li>
-						<li><a href="#market"><div>3</div></a></li>
-						<li><a href="#new-section"><div>4</div></a></li>
+				<div class="bullets">
+					<ul class="list-style">
+						<li class="bullet blue"><a href="#complexity" class="numbers-view"><div>1</div></a></li>
+						<li class="bullet"><a href="#comverse" class="numbers-view"><div>2</div></a></li>
+						<li class="bullet"><a href="#market" class="numbers-view"><div>3</div></a></li>
+						<li class="bullet"><a href="#new-section" class="numbers-view"><div>4</div></a></li>
 					</ul>
 				</div>
 			</div>
 			<div>
-				<ul>
-					<li>
+				<ul class="list-style">
+					<li class="box pink">
 						Comverse Is Value-Added Service Global Market Leader.
 						<div>
 							<div><img src="css/img/link-icon.png"></div>
 							<div>Read more</div>
 						</div>
 					</li>
-					<li>
+					<li class="box green">
 						Managed Services World Congress September 18-19 Berlin, Germany
 						<div>
 							<div><img src="css/img/file-icon.png"></div>
 							<div>Read more</div>
 						</div>
 					</li>
-					<li>
+					<li class="box orange">
 						Comverse: Enabling a world of Connected Possibilities
 						<div>
 							<div><img src="css/img/play-icon.png"></div>
@@ -92,70 +85,73 @@
 	</section>
 
 	<!--Services section-->
-	<section>
+	<!--
+	<section class="font-color-white solutions list-style">
 		<div>
-			<h1>What can we do for you?</h1>
+			<h1 class="upercase">What can we do for you?</h1>
 
-			<ul>
-				<li>
-					<div>
-						
-						<div>Data monetization</div>
+			<ul class="list-style">
+				<li class="service-icon">
+					<div id="icon-1-element">
+						<div >Data monetization</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						
+				<li class="service-icon">
+					<div class="service-icon">
+						<img src="css/img/solution_icon_personal.png" alt="Machine to machine" id="icon-2-element">
 						<div>Machine to machine (M2M)</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						
+				<li class="service-icon">
+					<div class="service-icon">
+						<img src="css/img/solution_icon_optimize-efficnt.png" alt="Over-the-top" id="icon-3-element">
 						<div>Over-the-top (OTT)</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						
+				<li class="service-icon">
+					<div class="service-icon">
+						<img src="css/img/solution_icon_diti-cx.png" alt="Cloud computing" id="icon-4-element">
 						<div>Cloud computing</div>
 					</div>
 				</li>
 				<li>
 					<div>
+						<div class="service-icon pink"></div>
+						<img src="css/img/solution_icon_biz-transform.png" alt="Managed services" id="icon-5-element">
 						<div>Managed services</div>
 					</div>
 				</li>
-				<li>
-					<div>
+				<li class="service-icon">
+					<div class="service-icon">
+						<img src="css/img/solution_icon_biz-analitics.png" alt="Social media" id="icon-6-element">
 						<div>Social media</div>
 					</div>
 				</li>
 			</ul>
 
-			<button>See all of our solutions</button>
+			<button class="blue-button">See all of our solutions</button>
 		</div>
 	</section>
-
+-->
 	<!--News section-->
-	<section>
+	<section class="font-color-white events list-style">
 		<div>
-			<h1>What's happening at comverse?</h1>
+			<h1 class="upercase">What's happening at comverse?</h1>
 
-			<div>NEWS
-				<ul>
-					<li>
-						<div><a href="">
-							<div>
+			<div><span class="upercase">news</span>
+				<ul class="list-style">
+					<li class="event-box">
+						<div>
+							<div class="date-box">
 								<div>04</div>
 								<div>Sep</div>
 							</div>
 							<p>
 								Comverse regains lead in convergent charging market regains lead in
 							</p>
-						</div></a>
+						</div>
 						<div>
-							<ul>
+							<ul class="list-style">
 								<li><a href="">All news</a></li>
 							</ul>
 						</div>
@@ -163,37 +159,37 @@
 				</ul>
 			</div>
 
-			<div>EVENTS
-				<ul>
-					<li>
-						<div><a href="">
-							<div>
+			<div><span class="upercase">EVENTS</span>
+				<ul class="list-style">
+					<li class="event-box">
+						<div>
+							<div class="date-box">
 								<div>04</div>
 								<div>Sep</div>
 							</div>
 							<p>
 								Comverse regains lead in convergent charging market regains lead in
 							</p>
-						</div></a>
+						</div>
 						<div>
-							<ul>
+							<ul class="list-style">
 								<li><a href="">All events</a></li>
 							</ul>
 						</div>
 					</li>
-					<li>
-						<div><a href="">
-							<div>
+					<li class="event-box">
+						<div>
+							<div class="date-box">
 								<div>04</div>
 								<div>Sep</div>
 							</div>
 							<p>
 								Comverse regains lead in convergent charging market regains lead in
 							</p>
-						</div></a>
+						</div>
 						<div>
-							<ul>
-								<li><a href="">All events</a></li>
+							<ul class="list-style">
+								<li class="first-link"><a href="">All events</a></li>
 							</ul>
 						</div>
 					</li>
@@ -203,10 +199,10 @@
 	</section>
 
 <!--Success stories section-->
-	<section>
+	<section class="font-color-gray success-stories list-style">
 		<div>
 			<h1>Success Stories</h1>
-			<ul>
+			<ul class="list-style">
 				<li>
 					<div><a href="">
 						<div>
@@ -226,7 +222,7 @@
 						</div>
 					</div></a>
 					<div class="clients">
-						<ul>
+						<ul class="list-style">
 							<li>
 								<img src="css/img/cycle30.png">
 							</li>
@@ -258,7 +254,7 @@
 						</div>
 					</div></a>
 					<div>
-						<ul>
+						<ul class="list-style">
 							<li>
 								<img src="css/img/mtc.png">
 							</li>
@@ -287,7 +283,7 @@
 						</div>
 					</div></a>
 					<div>
-						<ul>
+						<ul class="list-style">
 							<li>
 								<img src="css/img/hp.png">
 							</li>
@@ -299,7 +295,7 @@
 				</li>
 			</ul>
 			<div>
-				<a href=""><button>All 256 Success Stories</button></a>
+				<a href=""><button class="blue-button">All 256 Success Stories</button></a>
 			</div>
 		</div>
 
@@ -309,7 +305,7 @@
 	<footer>
 		<div>
 			<div>
-				<ul>
+				<ul class="list-style a-line-on-hover ">
 					<span>Key solutions</span>
 					<li><a href="">Monetizing Data</a></li>
 					<li><a href="">Over the Top (OTT)</a></li>
@@ -321,7 +317,7 @@
 					<li><a href="">Social Media</a></li>
 					<li><a href="">4G/LTE</a></li>
 				</ul>
-				<ul>
+				<ul class="list-style a-line-on-hover ">
 					<span>Products &amp; Services</span>
 					<li><a href="">Billing</a></li>
 					<li><a href="">VAS</a></li>
@@ -329,7 +325,7 @@
 					<li><a href="">Global Services</a></li>
 					<li><a href="">Training Services</a></li>
 				</ul>
-				<ul>
+				<ul class="list-style a-line-on-hover">
 					<span>Company</span>
 					<li><a href="">executive profiles</a></li>
 					<li><a href="">clients</a></li>
@@ -356,9 +352,9 @@
 					<label for="email"><h1>Subscribe to comverse</h1></label>
 					<form>
 						<input id="email" type="email" placeholder="email address"/>
-						<button>SIGN UP</button>
+						<button class="blue-background font-color-white upercase">SIGN UP</button>
 					</form>
-					<ul>
+					<ul class="list-style">
 						<li><a href="index.html"><img id="social-youtube" src="css/img/socialMenuIcon-youtube.png"></a></li>
 						<li><a href="index.html"><img id="social-twitter" src="css/img/socialMenuIcon-twitter.png"></a></li>
 						<li><a href="index.html"><img id="social-linkedin" src="css/img/socialMenuIcon-linkedin.png"></a></li>
