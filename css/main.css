@@ -1,10 +1,26 @@
 /*Content*/
+p{
+	display:block;
+	margin:0;
+}
+
 body{
 	font-family: Arial,Helvetica,sans-serif;
+	margin:0;
+	width: auto;
+	height: auto;
 }
 header{
 	color: #585951;
+	position: static;
+overflow: hidden;
+	width: auto;
+    height: auto;
+    box-shadow: 0 1px 3px 0 grey;
+
+
 }
+
 footer{
 	color: white;
 }
@@ -17,6 +33,11 @@ header a:link,header a:visited{
 footer a:link,footer a:visited{
 	color:white;
 }
+nav{
+	display: table;
+}
+
+
 .upercase{
 	text-transform: uppercase;
 }
@@ -47,13 +68,7 @@ footer a:link,footer a:visited{
 
 
 
-/*header>nav>ul>li>a{
-	color: #585951;
-}
-header>nav>ul>li>a:hover{
-	color: #585951;
-	text-decoration: underline;
-}*/
+
 
 
 /*background*/
@@ -64,19 +79,28 @@ header>nav>ul>li>a:hover{
 	background-image:  url("img/slide-bg-complexity.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center top;
+	margin: auto;
+
+
+	border-top: 0 0 0 1px grey;
 }
 .solutions{
 	background-image:  url("img/services-bg.png");
 	background-repeat: no-repeat;
 	background-attachment: relative;
-	background-position: center;
+	background-position: auto;
+
+}
+.wrapper-events{
 }
 .events{
+	background-size: cover;
 	background-image:  url("img/news-and-events-bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center top;
+
 }
 .success-stories{
 	background:rgb(236,236,236);
@@ -86,37 +110,45 @@ footer{
 	background-image: url("img/footer-bg.png") ;
 }
 .sub-menu-item{
+	/*float: left;*/
 	float: left;
 	text-transform: uppercase;
 	width:auto;
 	background:white url(img/divider.png) right center no-repeat;
 	padding:0 10px 0 10px;
+	font-size: 12px;
+
 }
 .mini-menu-item{
-	float: right;
-	text-transform: uppercase;
 	width:auto;
 	background:transparent url(img/divider.png) right center no-repeat;
 	padding:0 10px 0 10px;
+	float: left;
+	font-size: 10px;
 }
 #search-img{
-	background:white url(img/searchBtn.png) right center no-repeat;
-	/*background:white url(img/divider.png) left center no-repeat;*/
+	background:transparent url(img/searchBtn.png) right center no-repeat;
+	/*background-size: 8px 8px 8px 8px;*/
 	border: none;
+	margin: 0 0 0 -25px;
+	padding-bottom: 8px;
 }
 .blue-background{
 	background: linear-gradient(to bottom, #2e94c8 , #1188c4);
 	border: none;
 	height:2em;
+
 }
 .bullets{
 	width:50;
+	padding:0;
+
 }
 .bullet{
+	margin:5px 5px 5px 5px;
     width: 1em;
     height: 1em;
     background-color: rgb(224, 224, 224);
-    margin-right: 8px;
     box-shadow: grey 0px 1px 3px 0px;
     border-radius: 2px;
 }
@@ -135,19 +167,49 @@ footer{
 
 
 /*layout*/
-.mini-minu{
-	float: right;
+
+.margin-rghit{
+	margin-right:6em;
+}
+.margin-left{
+	margin-left:6em;
+}
+.cell{
+	/*float:left;
+	background-color: red;
+	width: 20em;
+	margin:auto;*/
+
+	
 }
 
+.center{
+	margin:0 auto 0 auto;;
+}
+.boxes{
+	padding:0;
+	margin-top:10px; 
+	margin-bottom: 10px;
 
-
+}
 
 .box{
-    width: 13em;
-    height: 7em;
-    margin-right: 34px;
+	margin-right: 30px;
+    width: 250px;
+    height: 6em;
     box-shadow: grey 0px 1px 3px 0px;
-    font-size: 1.2em;
+    font-size: 20px;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.box-left{
+
+    width: 250px;
+    height: 6em;
+    box-shadow: grey 0px 1px 3px 0px;
+    font-size: 20px;
     color: white;
     padding: 20px 15px;
     border-radius: 6px;
@@ -183,11 +245,14 @@ select{
 	border:none;
 	color: #585951;
 }
+
 .button-radious{
-	border-radius: 5px;
+	background:transparent url(img/divider.png) 80% center no-repeat;
+	border-radius: 7px;
 	border:1px solid #E0E0E0;
-	height:1.7em; 
+	height:1.8em; 
 	width:9.8em;
+	padding:1px 20px 1px 2px;
 }
 
 
@@ -227,25 +292,28 @@ select{
 
 /*events*/
 .event-box{
-    width: 14em;
-    height: 4em;
-    margin-right: 34px;
+    width: 260px;
+    height: 100px;
+   	margin-bottom: 100px;
+    margin-right: 20px;
+    padding:10px 20px 10px 10px;
+
     box-shadow: grey 0px 1px 3px 0px;
     font-size: 1.2em;
     color: white;
-    padding: 20px 15px;
     border-radius: 3px;
 	background-color: rgba(255, 255, 255, 0.301961);
 }
 
 .date-box{
-	width: 2em;
-    height: 3em;
-    margin-right: 34px;
+	width: 50px;
+    height: 80px;
+    margin-right: 10px;
     box-shadow: grey 0px 1px 3px 0px;
     font-size: 1.2em;
     color: white;
-    padding: 20px 15px;
+    padding: 10px;
+    /*padding: 20px 15px;*/
     border-radius: 1px;
 	background-color: #1188c4;
 
@@ -257,8 +325,65 @@ select{
     box-shadow: grey 0px 1px 3px 0px;
     font-size: 1.2em;
     color: white;
-    padding: 10px 10px;
+   padding: 10px 10px;
     border-radius: 1px;
 	background-color: #1188c4;
 	/*background:black url(img/eventListIconNews.png) left 100% center no-repeat;*/
+}
+
+
+
+
+/*positioning*/
+.header-content{
+	margin:0 auto 0 auto;
+	width:960px;/*use em*/
+	overflow: hidden;
+
+	/*display: table;*/
+}
+
+.sub-menu{
+	display: table-cell;
+}
+.clear-right{
+	clear:right;
+}
+
+.clear-left{
+	clear:left;
+}
+#search-box{
+	padding-top: 40px;
+	padding-left: 30px;
+}
+.mini-menu{
+	/*display:table;*/
+	display: table-cell auto;
+}
+
+
+.left{
+	float:left ;
+}
+.right{
+	float:right;
+}
+.comverse-logo{
+	display: table-cell auto;
+}
+
+
+
+/*****************************************/
+.wrapper{
+	margin:0 auto 0 auto;	
+	overflow:hidden;
+	width:960px;
+}
+p{
+	padding: 0;
+}
+.margin-top{
+	margin-top:10px;
 }
