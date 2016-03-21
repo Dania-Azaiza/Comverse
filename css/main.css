@@ -3,6 +3,9 @@ p{
 	display:block;
 	margin:0;
 }
+ul{
+	padding:0;
+}
 
 body{
 	font-family: Arial,Helvetica,sans-serif;
@@ -17,8 +20,6 @@ overflow: hidden;
 	width: auto;
     height: auto;
     box-shadow: 0 1px 3px 0 grey;
-
-
 }
 
 footer{
@@ -36,8 +37,9 @@ footer a:link,footer a:visited{
 nav{
 	display: table;
 }
-
-
+.events a:link,.events a:visited{
+	color: white;
+}
 .upercase{
 	text-transform: uppercase;
 }
@@ -100,6 +102,7 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center top;
+	display: block;
 
 }
 .success-stories{
@@ -318,17 +321,27 @@ select{
 	background-color: #1188c4;
 
 }
+
 .first-link{
-	width: 1em;
-    height: 1em;
-    margin-right: 34px;
-    box-shadow: grey 0px 1px 3px 0px;
-    font-size: 1.2em;
-    color: white;
-   padding: 10px 10px;
-    border-radius: 1px;
-	background-color: #1188c4;
-	/*background:black url(img/eventListIconNews.png) left 100% center no-repeat;*/
+	margin-top:10px;
+	list-style-image:url(img/eventListIconNews.png);
+	display: inline-block;
+	text-transform: capitalize;
+
+}
+.second-link{
+	margin-top:10px;
+	list-style-image:url(img/eventListIconEvents.png);
+	display: inline-block;
+	text-transform: capitalize;
+}
+.first-link :hover{
+	margin-top:10px;
+	list-style-image:url(img/eventListIconNews_hover.png);
+}
+.second-link :hover{
+	margin-top:10px;
+	list-style-image:url(img/eventListIconEvents_hover.png);
 }
 
 
@@ -386,4 +399,54 @@ p{
 }
 .margin-top{
 	margin-top:10px;
+}
+
+/******************success story********/
+.content-box{
+	width:305;
+	height: 300px;
+}
+.success-box{
+	width: 298px;
+    height: 190px;
+   	margin-bottom: 10px;
+    margin-right: 10px;
+    padding:0px 20px 0px 10px;
+    font-size: 1.2em;
+    color: black;
+    border-radius: 3px;
+	background-color: white;
+	font-size: 13px;
+}
+.success-box-2{
+	width: 180px;
+    height: 190px;
+   	margin-bottom: 10px;
+    margin-right: 10px;
+    padding:0px 20px 0px 10px;
+    font-size: 1.2em;
+    color: black;
+    border-radius: 3px;
+	background-color: white;
+	font-size: 13px;
+}
+
+.image{
+    width: 106px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    float: left;
+    margin: 4px;
+
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.no-margin-right{
+	margin-right: 0 !important;
+}
+.no-margin-left{
+	margin-left: 0 !important;
 }
