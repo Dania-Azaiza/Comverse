@@ -4,7 +4,7 @@ p{
 	margin:0;
 }
 footer h3{
-	font-size:20px;
+	font-size:17px;
 	text-align: center;
 	color:#1188c4;
 }
@@ -13,6 +13,7 @@ ul{
 }
 h2{
 	font-size: 30px;
+	margin: 0;
 }
 h4{
 	margin:0 0 0px 0 ;
@@ -41,6 +42,9 @@ a{
 }
 .sub-menu a:hover{
 	color: #0099ff;
+}
+footer li{
+	margin-bottom: 3px;
 }
 footer a:link,footer a:visited{
 	color:white;
@@ -147,7 +151,10 @@ footer{
 .blue-background{
 	background: linear-gradient(to bottom, #2e94c8 , #1188c4);
 	border: none;
-	height:2em;
+	height:30px;
+	margin-left:-6px;
+	border-radius: 2px;
+	margin-bottom: 30px;
 
 }
 .bullets{
@@ -171,8 +178,11 @@ footer{
 }
 
 #email{
-	height:2em;
+	height:30px;
 	border:none;
+	margin-right: 0;
+	padding: 0;
+	border-radius: 2px;
 }
 
 
@@ -484,10 +494,10 @@ p{
 }
 
 footer{
-	font-size: 12px;
+	font-size: 13px;
 }
 footer ul{
-	padding:0;
+	
 	list-style: none;
 }
 header ul{
@@ -503,6 +513,7 @@ header ul{
 	margin:0;
 	width:244px;
 	padding: 10px;
+	background: white;
 	background-color: rgba(255, 255, 255, 0.101961);
 }
 
@@ -510,6 +521,27 @@ ul{
 	margin:0;
 }
 
-footer p{
-	margin: -40px;
-padding-top: -40px}
+
+
+.wrap-2{
+	height: 40px;
+	width: 170px;
+	margin-bottom: 20px;
+}
+.wrap-1{
+	margin-top: -4px;
+	height: 40px;
+	width: 50px;
+	text-align: center;
+}
+.border{
+	border-top: solid 0.5px grey;
+}
+.head{
+	font-size: 16px;
+	margin:20px 0;
+}
+footer p {
+	margin-top: -20px !important;
+	color: grey;
+}
