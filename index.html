@@ -7,8 +7,36 @@
 </head>
 <body>
 	<header>
+			<div class="mobile-navigation hidde">
+				<div class="header-left">
+						<label class="mobile-nav-icon left" for="menu-mobile-btn">
+							<span class="raw-icon"></span>
+							<span class="raw-icon"></span>
+							<span class="raw-icon"></span>
+						</label>
+						<input type="checkbox" id="menu-mobile-btn">
+
+						<ul class="list-style main-nav-mobile">
+							<li class=""><a href="index.html">Your Needs</a></li>
+							<li class=""><a href="index.html">Our Portfolio</a></li>
+							<li class=""><a href="index.html">News &amp; Media</a></li>
+							<li class=""><a href="index.html">About Comverse</a></li>
+						</ul>
+				</div>
+				<div class="header-right">
+					<label class="mobile-search-icon" for="mobile-search">
+						<img src="css/img/searchBtnMobile.png" alt="search">
+					</label>
+					<input type="checkbox" id="mobile-search">
+					<input type="search" name="search" class="search-form mobile-search-textbox">
+					<div class="header-center1">
+						<div class="logo left"><img src="css/img/comverse-logo.png" alt="Comverse logo" class="comverse-logo "></div>
+					</div>
+				</div>
+			</div>
+	
 		<div class="header-content">
-			<nav>
+			<nav class="display-mobile">
 				<a href="index.html"><div class="logo"><img src="css/img/comverse-logo.png" alt="Comverse logo left" class="comverse-logo "></div></a>
 				<div class="sub-menu">
 					<ul class="list-style ">
@@ -43,12 +71,13 @@
 		<section class="font-color-white slides list-style">
 		<div class="wrapper">
 			<div class="slides-content">
-							<h2 class="margin-bottom">Free Your Markets From</h2>
-							<h2 class="margin-top"> IT Complexity</h2>
+						<div class="blue-background-mobile">
+							<h2 class="padding-bottom add-padding-top">Free Your Markets From</h2>
+							<h2 class="add-padding-bottom"> IT Complexity</h2>
 							<h4>Comverse Policy Studio</h4>
-							<p><h4><span class="bold">1st </span> Ever Marketing-Oriented Policy Tool</h4></p>
+							<p><h4 class="add-padding-bottom"><span class="bold">1st </span> Ever Marketing-Oriented Policy Tool</h4></p>	
+						</div>
 						<a href=""><button class="blue-button">LEARN MORE</button></a>
-
 						<ul class="list-style bullets">
 							<li class="bullet blue left"><a href="#complexity" class="numbers-view">1</a></li>
 							<li class="bullet left"><a href="#comverse" class="numbers-view">2</a></li>
@@ -83,16 +112,15 @@
 		</div>
 	</section>
 
-	<!--Services section-->
 
 	 <section class="font-color-white list-style solutions">
 	 	<div class="wrapper">
-	 		<h2>WHAT CAN WE DO FOR YOU?</h2>
+	 		<h2 class="add-padding-top">WHAT CAN WE DO FOR YOU?</h2>
 	 		<ul>
 	 			<li class ="service-icon smart-money left"><a href="#">Data Monetization</a></li>
 	 			<li class ="service-icon biz-analitics left"><a href="#">Machine to machine (M2M)</a></li>
 	 			<li class ="service-icon optimize-efficnt left"><a href="#">Over-the-top (OOT)</a></li>
-	 			<li class ="service-icon diti-cx left"><a href="#">Cloud comuting</a></li>
+	 			<li class ="service-icon diti-cx left clear-left-mobile"><a href="#">Cloud comuting</a></li>
 	 			<li class ="service-icon icon_personal left"><a href="#">Mangaed services</a></li>
 	 			<li class ="service-icon biz-transform left"><a href="#">Social Media</a></li>
 	 		</ul>
@@ -170,9 +198,9 @@
 
 <!--Success stories section-->
 	<section class="font-color-gray success-stories list-style">
-		<div class="wrapper">
+		<div class="story-wrapper">
 			<h2 class="upercase">Success Stories</h2>
-			<ul class="list-style">
+			<ul class="list-style stories">
 				<li class="left">
 					<div class="success-box left"><a href="">
 						<div>
@@ -215,7 +243,7 @@
 							<li class="left image">
 								<img src="css/img/cable_wireless_w100px_X_h42px2.jpg">
 							</li>
-							<li class="left image ">
+							<li class="left image margin-auto-right ">
 								<img class="add-margin" src="css/img/trilogy.png">
 							</li>
 						</ul>
@@ -239,7 +267,7 @@
 					</div></a>
 
 				</li>
-				<li class="left content-box">
+				<li class="left content-box display-mobile">
 					<div class="success-box-2 left"><a href="">
 						<div class="quote">
 							<div>
@@ -276,7 +304,7 @@
 	</section>
 <!--footer-->
 	<footer>
-		<div class="wrapper">
+		<div class="wrapper display-mobile">
 				<ul class="footer">
 					<li class="left footer-box2">
 						<div class="head">Key solutions</div>
@@ -335,20 +363,31 @@
 								<input id="email" type="email" placeholder="Email Address"/>
 								<button class="blue-background font-color-white upercase">SIGN UP</button>
 							</form>
-							<ul class="list-style">
-								<li class="left margin-rghit"><a href="index.html"><img id="youtube-icon" src="css/img/socialMenuIcon-youtube.png"></a></li>
-								<li class="left margin-rghit"><a href="index.html"><img id="twitter-icon" src="css/img/socialMenuIcon-twitter.png"></a></li>
-								<li class="left margin-rghit"><a href="index.html"><img id="linkedin-icon" src="css/img/socialMenuIcon-linkdin.png"></a></li>
-							</ul>
+							<div class="social-icons">
+				 				<a href="#" class="youtube-icon" id="youtube"></a>
+				 				<a href="#" class="twitter-icon" id="twitter"></a>
+				 				<a href="#" class="linkedin-icon" id="linkedin"></a>
+				 			</div>
 						</div>
 					</li>
 			</ul>
 		</div>
-
-
-
-			<p class="wrapper">Copyright &copy; 2012 Comverse, Inc. | Privacy Policy</p>
+		<p class="wrapper display-mobile">Copyright &copy; 2012 Comverse, Inc. | Privacy Policy</p>
 		
+		</div>
+		<div class="mobile-footer hidde">
+			<ul class="mobile-footer-list">
+				<li class="upercase">contact us</li>
+				<li class="upercase">subscribe to comverse news</li>
+				<li class="upercase left"><div class="left">visit us on:</div>
+					<div class="social-icons">
+		 				<a href="#" class="youtube-icon" id="youtube"></a>
+		 				<a href="#" class="twitter-icon" id="twitter"></a>
+		 				<a href="#" class="linkedin-icon" id="linkedin"></a>
+		 			</div>
+				</li>
+			</ul>
+			<div class="copyright">Copyright &copy; 2012 Comverse, Inc. | Privacy Policy</div>
 		</div>
 	</footer>
 <!--footer end-->
