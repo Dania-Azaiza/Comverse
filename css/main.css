@@ -4,7 +4,7 @@ p{
 	margin:0;
 }
 footer h3{
-	font-size:17px;
+	font-size:16px;
 	text-align: center;
 	color:#1188c4;
 }
@@ -82,8 +82,8 @@ nav{
 }
 .blue-button{
 	background: url(img/btnArrow.png) right 15px center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
-	height: 3em;
-	width: 13.5em;
+	height: 40px;
+	width: 180px;
 	border: none;
 	text-align: left;
 	border-radius: 6px;
@@ -110,7 +110,9 @@ nav{
 	background-image:  url("img/services-bg.png");
 	background-repeat: no-repeat;
 	background-attachment: relative;
-	background-position: auto;
+	background-position: center top;
+	margin-top: -30px;
+	padding-top: 60px;
 }
 .events{
 	background-size: cover;
@@ -183,6 +185,7 @@ footer{
 	margin-right: 0;
 	padding: 0;
 	border-radius: 2px;
+	width:150px;
 }
 
 
@@ -190,15 +193,12 @@ footer{
 /*layout*/
 
 .margin-rghit{
-	margin-right:6em;
+	margin-right: 5px;
 }
 .margin-left{
-	margin-left:6em;
+
 }
 
-.center{
-	margin:0 auto 0 auto;;
-}
 .boxes{
 	padding:0;
 	margin-top:10px; 
@@ -408,7 +408,7 @@ select{
 	display: table-cell auto;
 }
 
-.events h2, .success-stories h2{
+.events h2, .success-stories h2,.solutions h2{
 	text-align: center;
 	font-weight:normal;
 }
@@ -450,14 +450,15 @@ p{
 .success-box{
 	width: 298px;
     height: 180px;
-   	margin-bottom: 10px;
-    margin-right: 10px;
+    margin:0px 10px 10px 0;
+
     padding: 20px;
     font-size: 1.2em;
     color: black;
     border-radius: 3px;
 	background-color: white;
 	font-size: 13px;
+	overflow: hidden;
 }
 .success-box-2{
 	width: 180px;
@@ -473,11 +474,13 @@ p{
 }
 
 .image{
+	display: inline-block;
     width: 106px;
     height: 100px;
     background: rgb(255, 255, 255);
     border-radius: 2px;
     float: left;
+    margin-bottom:10px;
     margin-right: 10px;
     color:#7c7c7c;
    vertical-align: center;
@@ -536,6 +539,7 @@ ul{
 }
 .border{
 	border-top: solid 0.5px grey;
+	padding:20px 10px 20px 10px;
 }
 .head{
 	font-size: 16px;
@@ -544,4 +548,130 @@ ul{
 footer p {
 	margin-top: -20px !important;
 	color: grey;
+}
+
+
+
+
+
+.images-stories{
+	margin:0 10px 10px 10px;
+}
+.comp img{
+	width:100%;
+	margin-top: 20px;
+	vertical-align: 50%;
+}
+.no-margin{
+	margin-top:-5px !important;
+}
+.add-margin{
+	margin-top: 40px !important;
+}
+
+.min-margin{
+margin-top:-20px !important;
+height: 50px;
+width: 70px;
+}
+
+.center{
+	margin:0 auto 0 auto;	
+	overflow:hidden;
+	width:180px;
+}
+.author{
+	width:auto;
+	overflow: hidden;
+}
+.success-stories h2,.events h2{
+	margin:40px;
+}
+
+
+/**************************************************/
+
+
+
+a{
+	text-decoration: none;
+}
+
+.solutions > div > ul > li > a{
+	color: white;
+	position: relative;
+	top: 60px;
+	cursor: pointer;
+}
+
+.solutions > div > ul > li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.service-icon{
+	margin:60px 0 0 0;
+	width:135px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.biz-analitics{
+	background-image: url(img/solution_icon_biz-analitics.png);
+}
+.diti-cx{
+	background-image: url(img/solution_icon_diti-cx.png);
+}
+.smart-money{
+	background-image: url(img/solution_icon_smart-money.png);
+}
+.optimize-efficnt{
+	background-image: url(img/solution_icon_optimize-efficnt.png);
+}
+.icon_personal{
+	background-image: url(img/solution_icon_personal.png);
+}
+.biz-transform{
+	background-image: url(img/solution_icon_biz-transform.png);
+}
+
+.biz-analitics:hover{
+	background-image: url(img/solution_icon_biz-analitics_hover.png);
+}
+
+.diti-cx:hover{
+	background-image: url(img/solution_icon_diti-cx_hover.png);
+}
+.smart-money:hover{
+	background-image: url(img/solution_icon_smart-money_hover.png);
+}
+.optimize-efficnt:hover{
+	background-image: url(img/solution_icon_optimize-efficnt_hover.png);
+}
+.icon_personal:hover{
+	background-image: url(img/solution_icon_personal_hover.png);
+}
+.biz-transform:hover{
+	background-image: url(img/solution_icon_biz-transform_hover.png);
+}
+
+
+
+#linkedin-icon:hover{
+	background-image:transparent url(img/socialMenuIcon-linkdin_hover.png);
+}
+
+
+@media all and (max-width: 1004px) and (min-width: 768px) {
+
+
+
+	}
+
+@media all and (max-width:768px){
+	
 }
