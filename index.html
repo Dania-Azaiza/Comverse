@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 	<header>
 			<div class="mobile-navigation hidde">
 				<div class="header-left">
-						<label class="mobile-nav-icon left" for="menu-mobile-btn">
+						<label class="mobile-nav-icon left" for="menu-mobile-btn"><span class="hidden">nav</span>
 							<span class="raw-icon"></span>
 							<span class="raw-icon"></span>
 							<span class="raw-icon"></span>
@@ -24,10 +25,11 @@
 						</ul>
 				</div>
 				<div class="header-right">
-					<label class="mobile-search-icon" for="mobile-search"></label>
+					<label class="mobile-search-icon" for="mobile-search"><span class="hidden">header</span></label>
 					<img src="css/img/searchBtnMobile.png" alt="search" id="mobile-search">
 					
 					<input type="checkbox" id="mobile-search">
+					<label class="mobile-search" for="mobile-s"><span class="hidden">search</span></label>
 					<input type="search" name="search" class="search-form mobile-search-textbox">
 					<div class="header-center1">
 						<div class="logo left"><img src="css/img/comverse-logo.png" alt="Comverse logo" class="comverse-logo "></div>
@@ -46,9 +48,10 @@
 						<li class="sub-menu-item no-background"><a href="index.html">About Comverse</a></li>
 					</ul>
 				</div>
-				<label for="mini-menu-right" class="hidden"></label>
+				<!-- <label for="mini-menu-right" class="hidden"></label> -->
 				<ul class="list-style a-line-on-hover mini-menu" id="mini-menu-right">
 					<li class="mini-menu-item">
+					<label for="lan-select"><span class="hidden">lan</span></label>
 						<select>
 							<option value="English">EN</option>
 							<option value="hebrew">עברית</option>
@@ -57,12 +60,12 @@
 					</li>
 					<li class="mini-menu-item no-background "><a href="index.html">Customer login</a></li>
 					<li>
-					<label for="search-box" class="hidden"></label>
+					<label for="search-box" class="hidden"><span class="hidden">search</span></label>
 						<form method="GET" action="" id="search-box" class="">
 							<label for="search-com" class="hidden">search</label>
 							<input type="search" name="search" class="button-radious" id="search-com">
-							<button type="submit" class="hidden"></button>
-							<input type="submit" name="submit" value="" id="search-img">
+							<button type="submit" class="hidden"><span class="hidden">submit</span></button>
+							<input type="submit" name="submit" value="" id="search-img"><span class="hidden">submit</span>
 						</form>
 											
 						
