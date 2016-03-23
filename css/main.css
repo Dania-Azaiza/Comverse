@@ -25,6 +25,9 @@ body{
 	width: auto;
 	height: auto;
 }
+.hidden{
+	display: none;
+}
 header{
 	color: #585951;
 	overflow: hidden;
@@ -187,6 +190,9 @@ footer{
     background-color: rgb(224, 224, 224);
     box-shadow: grey 0px 1px 3px 0px;
     border-radius: 2px;
+}
+.bullet:hover{
+    background-color: #1188c4;
 }
 .numbers-view{
 	display:none;
@@ -660,6 +666,12 @@ a{
 .linkedin-icon:hover {
 	background: url(img/socialMenuIcon-linkdin_hover.png) no-repeat;
 }
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
 
 
 @media all and (max-width:768px){
@@ -830,6 +842,11 @@ a{
 	    text-align: center;
 	    padding:4px 1px 1px 1px;
 	    margin-left: 4px;
+		cursor:pointer;
+	}
+	.bullet:hover{
+		cursor:pointer;
+		background-color:#1188c4!important;
 	}
 
 	.bullet a:link,.bullet a:visited{
