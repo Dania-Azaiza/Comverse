@@ -723,15 +723,20 @@ q::after {
     }
 
 	.mobile-nav-icon {
-        position: static;
-        top: 20px;
-        left: 10px;
-        margin: 5px;
-        padding:5px;
-        display: block;
+		background:url(img/hamburger-icon.png) center;
+		background-color:#f1f1f1;
+		background-repeat:no-repeat;
+	    display: inline-block;
+	    width: 32px;
+	    height: 30px;
 	    border-radius: 5px;
-	    text-decoration: none;
-	    background: #e5e5e5 ;
+	    padding: 6px 2px 0 6px;
+	    border: 2px solid #D8D8D8;
+	    float: right;
+	    margin-top: 10px;
+	    margin-right: 10px;
+		margin-left:10px;
+	    position: relative;
     }
 
      .mobile-nav-icon:hover{
@@ -779,13 +784,15 @@ q::after {
 	    display: block;
 	}
 	.mobile-search-icon {
-	    background: #f1f1f1;
+	    background:url(img/searchBtnMobile.png) center;
+		background-color:#f1f1f1;
+		background-repeat:no-repeat;
 	    display: inline-block;
 	    width: 32px;
 	    height: 30px;
 	    border-radius: 5px;
-	    padding: 8px 4px 0 8px;
-	    border: 1px solid grey;
+	    padding: 6px 2px 0 6px;
+	    border: 2px solid #D8D8D8;
 	    float: right;
 	    margin-top: 10px;
 	    margin-right: 10px;
@@ -813,12 +820,9 @@ q::after {
     input[type="checkbox"]:checked ~ .header-center1 {
         display: none;
     }
-
     input[type=checkbox] {
     	display:none;
 	}
-
-
 	.blue-background-mobile{
 		background: linear-gradient(to bottom, #2e94c8 , #1188c4);
 		padding-left: 10px;
