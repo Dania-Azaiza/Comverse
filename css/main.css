@@ -680,7 +680,7 @@ q::after {
 	}
 	.event-box .left,.bullets .left,.solutions .left,
 	.success-box .left,.success-box-2 .left,
-	.monile-footer .left,.mobile-navigation .left{
+	.monile-footer .left{
 		float:left;
 	}
 	.wrapper{
@@ -690,34 +690,19 @@ q::after {
 	}
     header {
 	    height: 100px;
-	    width:auto;
-	    overflow: hidden;
+	    width:100%;
+
 	    background: white;
     }
-
-	.header-left{
-		width:40%;
-		float: left;
-		display: inline-block;
-		height: 100px;
-	}
-
-	.header-right{
-		width:60%;
-		float: left;
-		height: 100px;
-		display: inline-block;
-	}
     input[type="checkbox"]:checked ~ ul {
         display: block;
         top:100px;
     }
-
     input[type=checkbox] {
     	display:none;
 	}
 	.main-nav-mobile li {
-        width:200px;
+        width:auto;
         border-radius: 5px;
 	    height: 30px;
     }
@@ -732,7 +717,6 @@ q::after {
 	    border-radius: 5px;
 	    padding: 6px 2px 0 6px;
 	    border: 2px solid #D8D8D8;
-	    float: right;
 	    margin-top: 10px;
 	    margin-right: 10px;
 		margin-left:10px;
@@ -742,17 +726,8 @@ q::after {
      .mobile-nav-icon:hover{
         cursor: pointer;
     }
-
-	.raw-icon {
-        display: block;
-        background-color: #a0a0a0;
-        width: 30px;
-        height: 4px;
-        margin: 4px auto;
-    }
-
     .main-nav-mobile {
-    	width:auto;
+    	width:100%;
         display: none;
         text-transform: uppercase;
         font-weight: bold;
@@ -774,14 +749,14 @@ q::after {
 	    line-height: 28px;
     }
     .main-nav-mobile li a:hover{
-		background-color: green;
-
+		background-color: blue;
 	}
-
     .comverse-logo{
-
-	    margin-top:10px;
+    	margin-right:auto;
+    	margin-left: auto;
 	    display: block;
+	    margin-top: -30px;
+	    padding-left: 10%;
 	}
 	.mobile-search-icon {
 	    background:url(img/searchBtnMobile.png) center;
@@ -793,25 +768,25 @@ q::after {
 	    border-radius: 5px;
 	    padding: 6px 2px 0 6px;
 	    border: 2px solid #D8D8D8;
-	    float: right;
-	    margin-top: 10px;
+	    margin-top: -15px;
 	    margin-right: 10px;
 	    position: relative;
 	}
 	.mobile-search-icon:hover{
 		cursor: pointer;
 	}
-
     .mobile-search-textbox{
     	display:none;
     	outline: none;
-		margin-top: 30px;
+		margin-top: -30px;
 		border-radius: 7px;
 		border:1px solid #E0E0E0;
 		height:1.8em; 
 		width:170px;
 		padding:1px 22px 1px 3px;
 		font-size: 20px;
+		margin-right: auto;
+		margin-left: auto;
     }
 
     input[type="checkbox"]:checked ~ .mobile-search-textbox {
