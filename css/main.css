@@ -309,6 +309,7 @@ select{
     border-radius: 3px;
 	background-color: rgba(255, 255, 255, 0.301961);
 	font-size: 13px;
+	cursor: pointer;
 }
 
 .date-box{
@@ -327,6 +328,8 @@ select{
 }
 .date-num{
 	font-size: 45px;
+}
+.border-bottom{
 	border-bottom: dotted 1.5px;
 }
 .date-month{
@@ -354,7 +357,6 @@ select{
 	margin-top:10px;
 	list-style-image:url(img/eventListIconEvents_hover.png);
 }
-
 /*positioning*/
 .header-content{
 	background: #FFF none repeat scroll 0% 0%;
@@ -431,6 +433,20 @@ p{
 	font-size: 13px;
 	overflow: hidden;
 }
+
+.success-box a{
+	text-decoration: none;
+	color:grey;
+}
+/*.success-box:hover::before {
+    background: #3398CC url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg") center center no-repeat;
+    content: "";
+    width: 351px;
+    height: 0;
+    transition: height 0.4s ease-in;
+    display: block;
+    position: absolute;
+}*/
 .success-box-2{
 	width: 180px;
     height: 180px;
@@ -442,6 +458,13 @@ p{
     border-radius: 3px;
 	background-color: white;
 	font-size: 13px;
+}
+.success-box-2 a{
+	text-decoration: none;
+	color:grey;
+}
+.success-box-2 p{
+	margin-bottom: 60px;
 }
 
 .image{
@@ -498,6 +521,8 @@ ul{
 	height: 40px;
 	width: 170px;
 	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-left: 5px;
 }
 .wrap-1{
 	margin-top: -4px;
