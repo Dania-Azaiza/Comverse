@@ -903,6 +903,7 @@ q::after {
 	.display-mobile{
 		display: none;
 	}
+
 	footer{
 		background: white;
 	}
@@ -934,7 +935,7 @@ q::after {
 	    color:black !important;
 	}
 	.copyright a :hover{
-	    text-decoration: underline !important;
+		text-decoration: underline !important;
 	}
 	footer li:hover{
 		background-color: rgba(256, 256, 256, 0.7);
